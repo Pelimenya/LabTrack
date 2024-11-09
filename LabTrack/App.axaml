@@ -1,0 +1,29 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="LabTrack.App"
+             RequestedThemeVariant="Light">
+
+    <Application.Resources>
+        
+        <SolidColorBrush x:Key="PrimaryColor" Color="#B3E5FC" /> 
+        <SolidColorBrush x:Key="PrimaryColorOpacity" Color="#B3E5FC" Opacity="0.3" />
+        <SolidColorBrush x:Key="AccentColor" Color="#0288D1" />   
+        <SolidColorBrush x:Key="TextColor" Color="#1A237E" />     
+        <SolidColorBrush x:Key="ErrorColor" Color="#D32F2F" />    
+        <SolidColorBrush x:Key="ButtonBackground" Color="#039BE5" />
+        <SolidColorBrush x:Key="ButtonHoverBackground" Color="#0277BD" /> 
+        <SolidColorBrush x:Key="BorderColor" Color="#81D4FA" />  
+        <SolidColorBrush x:Key="Background" Color="#B3E5FC" Opacity="0.5" />
+        <ImageBrush x:Key="BackgroundImageBrush" 
+                    Source="avares://LabTrack/Resources/Images/Background.jpg"
+                    Stretch="UniformToFill"
+                    Opacity="0.75" />
+    </Application.Resources>
+
+    <Application.Styles>
+        <FluentTheme>
+            <StyleInclude Source="avares://LabTrack/Styles/LabTheme.axaml"></StyleInclude>
+            <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml" />
+        </FluentTheme>
+    </Application.Styles>
+</Application>

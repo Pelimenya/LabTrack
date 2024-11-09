@@ -1,0 +1,124 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LabTrack.Pages.Main.LoginPage">
+    
+    <Grid x:Name="MainGrid" Background="{StaticResource BackgroundImageBrush}">
+        <Border HorizontalAlignment="Center" VerticalAlignment="Center"
+                CornerRadius="20"                              
+                Background="{StaticResource PrimaryColorOpacity}"
+                BorderBrush="{StaticResource AccentColor}"    
+                BorderThickness="2"                            
+                Width="450">                                  
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="30" Margin="10">
+            
+            <!-- Заголовок -->
+            <TextBlock Text="Авторизация"
+                       Classes="heading"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource AccentColor}" />
+
+            <!-- Логин -->
+            <StackPanel Spacing="10" Orientation="Horizontal">
+                <StackPanel Spacing="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                        <TextBlock Text="Логин:"
+                                   VerticalAlignment="Center"
+                                   Width="80"
+                                   FontSize="16" />
+                        <TextBox x:Name="LoginBox"
+                                 Width="250"
+                                 Height="40"
+                                 Background="{StaticResource PrimaryColor}"
+                                 BorderBrush="{StaticResource BorderColor}"
+                                 BorderThickness="2"
+                                 Padding="10"
+                                 FontSize="16"
+                                 Foreground="{StaticResource TextColor}"
+                                 CornerRadius="8" />
+                    </StackPanel>
+
+                    <!-- Пароль -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                        <TextBlock Text="Пароль:"
+                                   VerticalAlignment="Center"
+                                   Width="80"
+                                   Foreground="{StaticResource TextColor}"
+                                   FontSize="16" />
+                        <TextBox x:Name="PasswordBox"
+                                 PasswordChar="*"
+                                 Width="250"
+                                 Height="40"
+                                 Background="{StaticResource PrimaryColor}"
+                                 BorderBrush="{StaticResource BorderColor}"
+                                 BorderThickness="2"
+                                 Padding="10"
+                                 FontSize="16"
+                                 Foreground="{StaticResource TextColor}"
+                                 CornerRadius="8" />
+                        <TextBox x:Name="TextBoxPassword"
+                                 PasswordChar="*"
+                                 Width="250"
+                                 Height="40"
+                                 Background="{StaticResource PrimaryColor}"
+                                 BorderBrush="{StaticResource BorderColor}"
+                                 BorderThickness="2"
+                                 Padding="10"
+                                 FontSize="16"
+                                 Foreground="{StaticResource TextColor}"
+                                 CornerRadius="8" 
+                                 IsVisible="False"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Bottom">
+                <Button Content="👁"
+                        Background="{StaticResource BorderColor}"
+                        Width="40"
+                        Height="40"
+                        Margin="0,0,0,5"
+                        PointerPressed="Check_OnPointerPressed"
+                        PointerReleased="Check_OnPointerReleased"
+                        BorderBrush="{StaticResource AccentColor}"
+                        BorderThickness="1"
+                        HorizontalContentAlignment="Center"
+                        CornerRadius="50"
+                        HorizontalAlignment="Center"
+                        VerticalContentAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+            <!-- Ошибки -->
+            <TextBlock x:Name="AllertTb"
+                       Classes="error"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,0"
+                       TextWrapping="Wrap"
+                       Foreground="{StaticResource ErrorColor}"
+                       FontSize="14" />
+
+            <!-- Кнопка Войти -->
+            <Button Content="Войти"
+                    Classes="a"
+                    Click="Button_Login"
+                    HorizontalAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Width="200"
+                    Height="50"
+                    Background="{StaticResource BorderColor}"
+                    Foreground="{StaticResource TextColor}"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    BorderBrush="{StaticResource AccentColor}"
+                    BorderThickness="2"
+                    CornerRadius="8"
+                    VerticalAlignment="Center" />
+        </StackPanel>
+            </Border>
+    </Grid>
+</UserControl>
