@@ -42,7 +42,7 @@ public partial class MedicalContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=\"localhost\"; port=\"5432\"; Database=\"MedicalLabDataBase\"; Username=\"Pelimenya\"; Password=\"root\";");
+        => optionsBuilder.UseNpgsql("Host= localhost; port=5432; Database=MedicalLabDataBase; Username=Pelimenya; Password=root;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -62,7 +62,7 @@ public partial class MedicalContext : DbContext
             entity.Property(e => e.MiddleName)
                 .HasMaxLength(50)
                 .HasColumnName("Middle_Name");
-            entity.Property(e => e.Password).HasMaxLength(50);
+            entity.Property(e => e.Password).HasMaxLength(64);
 
             entity.HasOne(d => d.IdSpecializationNavigation).WithMany(p => p.Doctors)
                 .HasForeignKey(d => d.IdSpecialization)
@@ -168,7 +168,6 @@ public partial class MedicalContext : DbContext
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20)
                 .HasColumnName("Phone_Number");
-            entity.Property(e => e.Photo).HasMaxLength(150);
         });
 
         modelBuilder.Entity<PatientDoctorAppointment>(entity =>

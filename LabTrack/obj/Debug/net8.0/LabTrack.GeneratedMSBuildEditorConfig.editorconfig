@@ -23,6 +23,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/Main/AdminMenuPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/Main/LoginPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

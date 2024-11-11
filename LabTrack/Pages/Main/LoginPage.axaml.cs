@@ -51,12 +51,21 @@ public partial class LoginPage : UserControl
         using (var scope = App.ServiceProvider.CreateScope())
         {
             var _context = scope.ServiceProvider.GetRequiredService<MedicalContext>();
-            var person = await _context.Doctors.FirstOrDefaultAsync(x => x.Login == enteredLogin)!;
+            var person = await _context.Doctors.Include(x => x.IdSpecializationNavigation).FirstOrDefaultAsync(x => x.Login == enteredLogin)!;
             if (person != null && person.Password == hashedPassword)
             {
+                if (person.IdSpecializationNavigation.SpecializationName == "admin")
+                {
+                    var mainWindow = (MainWindow)this.VisualRoot;
+                    var adminMenuPage= new AdminMenuPage();
+                    mainWindow.ContentArea.Content = adminMenuPage;    
+                }
+                else
+                {
                 var mainWindow = (MainWindow)this.VisualRoot;
                 var menuPage= new MenuPage();
                 mainWindow.ContentArea.Content = menuPage;
+                }
             }
             else if (enteredLogin.IsNullOrEmpty() || enteredPassword.IsNullOrEmpty())
             {

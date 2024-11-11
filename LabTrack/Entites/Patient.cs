@@ -37,7 +37,7 @@ public partial class Patient
 
     public DateOnly? MedicalCardStartDate { get; set; }
 
-    public string? Photo { get; set; }
+    public byte[]? Photo { get; set; }
 
     public DateOnly? DateLastVisit { get; set; }
 
