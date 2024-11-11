@@ -196,3 +196,7 @@ C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\obj\
 C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\obj\Debug\net8.0\LabTrack.csproj.Up2Date
 C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\obj\Debug\net8.0\LabTrack.genruntimeconfig.cache
 C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\obj\Debug\net8.0\ref\LabTrack.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\obj\Debug\net8.0\LabTrack.sourcelink.json
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll

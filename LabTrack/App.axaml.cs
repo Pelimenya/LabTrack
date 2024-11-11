@@ -2,6 +2,8 @@ using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using LabTrack.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace LabTrack;
@@ -30,7 +32,7 @@ public partial class App : Application
     
     private void ConfigureServices(IServiceCollection service)
     {
-        // service.AddDbContext<AutoCenterDbContext>(options => options.UseSqlServer("Server=localhost,1433;Database=AutoCenterDB;User Id=sa;Password=Root_2005;TrustServerCertificate=True"));
-        // service.AddSingleton<MainWindow>();
+        service.AddDbContext<MedicalContext>(options => options.UseNpgsql("Host= localhost; port=5432; Database=MedicalLabDataBase; Username=Pelimenya; Password=root"));
+        service.AddSingleton<MainWindow>();
     }
 }

@@ -1,10 +1,16 @@
-﻿using Avalonia;
+﻿using System;
+using System.Security.Cryptography;
+using System.Text;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media;
+using LabTrack.Context;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace LabTrack.Pages.Main;
 
@@ -34,29 +40,34 @@ public partial class LoginPage : UserControl
     }
 
 
-    private void Button_Login(object? sender, RoutedEventArgs e)
+    private async void Button_Login(object? sender, RoutedEventArgs e)
     {
+        string enteredLogin = LoginBox.Text;
+        string enteredPassword = PasswordBox.Text;
         IsEnabled = false;
+        using SHA256 sha256 = SHA256.Create();
+        byte[] hashedPasswordBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(enteredPassword));
+        string hashedPassword = BitConverter.ToString(hashedPasswordBytes).Replace("-", "").ToLower();
         using (var scope = App.ServiceProvider.CreateScope())
         {
-            // var _context = scope.ServiceProvider.GetRequiredService<AutoCenterDbContext>();
-            // var person = await _context.Personals.FirstOrDefaultAsync(x => x.PersonalLogin == login.Text)!;
-            // if (person != null && person.PersonalPassword == password.Text)
-            // {
-            //     var mainWindow = (MainWindow)this.VisualRoot;
-            //     var mainPage = new MainPage();
-            //     mainWindow.ContentArea.Content = mainPage;
-            // }
-            // else if (login.Text.IsNullOrEmpty() || password.Text.IsNullOrEmpty())
-            // {
-            //     AllertTb.Text = "Заполните все поля";
-            //     IsEnabled = true;
-            // }
-            // else
-            // {
-            //     AllertTb.Text = "Неверный логин или пароль";
-            //     IsEnabled = true;
-            // }
+            var _context = scope.ServiceProvider.GetRequiredService<MedicalContext>();
+            var person = await _context.Doctors.FirstOrDefaultAsync(x => x.Login == enteredLogin)!;
+            if (person != null && person.Password == hashedPassword)
+            {
+                var mainWindow = (MainWindow)this.VisualRoot;
+                var menuPage= new MenuPage();
+                mainWindow.ContentArea.Content = menuPage;
+            }
+            else if (enteredLogin.IsNullOrEmpty() || enteredPassword.IsNullOrEmpty())
+            {
+                AllertTb.Text = "Заполните все поля";
+                IsEnabled = true;
+            }    
+            else
+            {
+                AllertTb.Text = "Неверный логин или пароль";
+                IsEnabled = true;
+            }
         }
     }
 }

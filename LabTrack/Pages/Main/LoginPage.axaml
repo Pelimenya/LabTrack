@@ -62,7 +62,6 @@
                                  Foreground="{StaticResource TextColor}"
                                  CornerRadius="8" />
                         <TextBox x:Name="TextBoxPassword"
-                                 PasswordChar="*"
                                  Width="250"
                                  Height="40"
                                  Background="{StaticResource PrimaryColor}"
