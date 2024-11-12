@@ -4,6 +4,7 @@ build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
 build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
 build_property.AvaloniaNameGeneratorFilterByPath = *
 build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
 build_property.TargetFramework = net8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -23,6 +24,30 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/AboutPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/DoctorManagementPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/MainFormPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/PatientManagement.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/ScheduleExceptions.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/ScheduleManagement.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/SearchPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/AdminPages/Statistics.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/Main/AdminMenuPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
@@ -30,6 +55,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Pages/Main/MenuPage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Resources/Icons.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/kostm/Desktop/Курсовые работы 2024/LabTrack/LabTrack/Styles/LabTheme.axaml]

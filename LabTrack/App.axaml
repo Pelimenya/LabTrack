@@ -6,9 +6,10 @@
     <Application.Resources>
         
         <SolidColorBrush x:Key="PrimaryColor" Color="#B3E5FC" /> 
-        <SolidColorBrush x:Key="PrimaryColorOpacity" Color="#B3E5FC" Opacity="0.3" />
+        <SolidColorBrush x:Key="PrimaryColorOpacity" Color="#B3E5FC" Opacity="0.55" />
         <SolidColorBrush x:Key="AccentColor" Color="#0288D1" />   
         <SolidColorBrush x:Key="TextColor" Color="#1A237E" />     
+        <SolidColorBrush x:Key="BackGroundTabBar" Color="#80daeb" Opacity="0.7" />     
         <SolidColorBrush x:Key="ErrorColor" Color="#D32F2F" />    
         <SolidColorBrush x:Key="ButtonBackground" Color="#039BE5" />
         <SolidColorBrush x:Key="ButtonHoverBackground" Color="#0277BD" /> 
@@ -17,13 +18,18 @@
         <ImageBrush x:Key="BackgroundImageBrush" 
                     Source="avares://LabTrack/Resources/Images/Background.jpg"
                     Stretch="UniformToFill"
-                    Opacity="0.75" />
+                    Opacity="0.85" />
+        <ImageBrush x:Key="BackgroundSecondImageBrush" 
+                    Source="avares://LabTrack/Resources/Images/background.png"
+                    Stretch="UniformToFill"
+                    Opacity="0.55" />
     </Application.Resources>
 
     <Application.Styles>
         <FluentTheme>
             <StyleInclude Source="avares://LabTrack/Styles/LabTheme.axaml"></StyleInclude>
             <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml" />
+            <StyleInclude Source="avares://LabTrack/Resources/Icons.axaml"/>
         </FluentTheme>
     </Application.Styles>
 </Application>

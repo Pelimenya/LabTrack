@@ -5,7 +5,7 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="LabTrack.Pages.Main.LoginPage">
     
-    <Grid x:Name="MainGrid" Background="{StaticResource BackgroundImageBrush}">
+    <Grid x:Name="MainGrid">
         <Border HorizontalAlignment="Center" VerticalAlignment="Center"
                 CornerRadius="20"                              
                 Background="{StaticResource PrimaryColorOpacity}"

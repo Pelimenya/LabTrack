@@ -21,9 +21,13 @@ C:\Users\kostm\.nuget\packages\avalonia.themes.fluent\11.0.10\lib\net6.0\Avaloni
 C:\Users\kostm\.nuget\packages\avalonia.themes.simple\11.0.10\lib\net6.0\Avalonia.Themes.Simple.dll
 C:\Users\kostm\.nuget\packages\avalonia.win32\11.0.10\lib\net6.0\Avalonia.Win32.dll
 C:\Users\kostm\.nuget\packages\avalonia.x11\11.0.10\lib\net6.0\Avalonia.X11.dll
+C:\Users\kostm\.nuget\packages\communitytoolkit.mvvm\8.3.2\lib\net8.0\CommunityToolkit.Mvvm.dll
 C:\Users\kostm\.nuget\packages\entityframework\6.5.1\lib\netstandard2.1\EntityFramework.dll
 C:\Users\kostm\.nuget\packages\entityframework\6.5.1\lib\netstandard2.1\EntityFramework.SqlServer.dll
-C:\Users\kostm\.nuget\packages\harfbuzzsharp\7.3.0\lib\net6.0\HarfBuzzSharp.dll
+C:\Users\kostm\.nuget\packages\harfbuzzsharp\7.3.0.2\lib\net6.0\HarfBuzzSharp.dll
+C:\Users\kostm\.nuget\packages\livechartscore\2.0.0-rc4.5\lib\net8.0\LiveChartsCore.dll
+C:\Users\kostm\.nuget\packages\livechartscore.skiasharpview.avalonia\2.0.0-rc4.5\lib\net8.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\kostm\.nuget\packages\livechartscore.skiasharpview\2.0.0-rc4.5\lib\net8.0\LiveChartsCore.SkiaSharpView.dll
 C:\Users\kostm\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Users\kostm\.nuget\packages\microsoft.codeanalysis.csharp\4.5.0\lib\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\kostm\.nuget\packages\microsoft.codeanalysis.csharp.scripting\3.8.0\lib\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Scripting.dll
@@ -54,7 +58,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.10\ref\net8.0\mscorl
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.10\ref\net8.0\netstandard.dll
 C:\Users\kostm\.nuget\packages\npgsql\8.0.5\lib\net8.0\Npgsql.dll
 C:\Users\kostm\.nuget\packages\npgsql.entityframeworkcore.postgresql\8.0.10\lib\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\kostm\.nuget\packages\skiasharp\2.88.7\lib\net6.0\SkiaSharp.dll
+C:\Users\kostm\.nuget\packages\skiasharp\2.88.8\lib\net6.0\SkiaSharp.dll
+C:\Users\kostm\.nuget\packages\skiasharp.harfbuzz\2.88.8\lib\net6.0\SkiaSharp.HarfBuzz.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.10\ref\net8.0\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.10\ref\net8.0\System.Buffers.dll
 C:\Users\kostm\.nuget\packages\system.codedom\6.0.0\lib\net6.0\System.CodeDom.dll

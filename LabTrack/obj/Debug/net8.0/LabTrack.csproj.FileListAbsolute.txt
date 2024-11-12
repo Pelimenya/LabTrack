@@ -200,3 +200,8 @@ C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\obj\
 C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\CommunityToolkit.Mvvm.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\LiveChartsCore.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\LiveChartsCore.SkiaSharpView.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\LiveChartsCore.SkiaSharpView.Avalonia.dll
+C:\Users\kostm\Desktop\Курсовые работы 2024\LabTrack\LabTrack\bin\Debug\net8.0\SkiaSharp.HarfBuzz.dll

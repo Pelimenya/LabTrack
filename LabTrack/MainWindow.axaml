@@ -11,9 +11,22 @@
         WindowStartupLocation="CenterScreen"
         MinHeight="450"
         MinWidth="750">
-        
     
-    
-    <ContentControl x:Name="ContentArea"></ContentControl>
    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+ 
+        <Border Background="{StaticResource BackGroundTabBar}" Grid.Row="0" HorizontalAlignment="Stretch"
+                PointerPressed="OnTitleBarPointerPressed"
+                PointerMoved="OnTitleBarPointerMoved"
+                PointerReleased="OnTitleBarPointerReleased">
+            <TextBlock Text="LabTrack" Foreground="White" VerticalAlignment="Center" Margin="10,0,0,0"/>
+        </Border>
+        
+        <ContentControl Background="{StaticResource BackgroundImageBrush}" x:Name="ContentArea" Grid.Row="1" />
+    </Grid>
 </Window>

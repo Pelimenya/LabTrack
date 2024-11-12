@@ -5,7 +5,9 @@
       <map>
         <entry key="LabTrack/App.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/MainWindow.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/Main/AdminMenuPage.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/Pages/Main/LoginPage.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/Main/MenuPage.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/Styles/LabTheme.axaml" value="LabTrack/LabTrack.csproj" />
       </map>
     </option>
