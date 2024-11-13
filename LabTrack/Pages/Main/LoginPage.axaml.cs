@@ -54,6 +54,7 @@ public partial class LoginPage : UserControl
             var person = await _context.Doctors.Include(x => x.IdSpecializationNavigation).FirstOrDefaultAsync(x => x.Login == enteredLogin)!;
             if (person != null && person.Password == hashedPassword)
             {
+                App.IdDoctor = person.IdDoctor;
                 if (person.IdSpecializationNavigation.SpecializationName == "admin")
                 {
                     var mainWindow = (MainWindow)this.VisualRoot;
