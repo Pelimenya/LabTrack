@@ -1,92 +1,89 @@
 ﻿<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="LabTrack.Pages.Main.AdminMenuPage">
-  <SplitView IsPaneOpen="False" Name="SV" OpenPaneLength="250" DisplayMode="CompactInline" CompactPaneLength="48"
+    <SplitView IsPaneOpen="False" Name="SV" OpenPaneLength="250" CompactPaneLength="48" DisplayMode="CompactInline"
                PaneBackground="{StaticResource BackgroundSecondImageBrush}">
         
         <!-- Панель меню -->
         <SplitView.Pane>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"></RowDefinition>
-                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 
                 <!-- Основные кнопки меню -->
-                <StackPanel Spacing="10" Margin="10">
-                    
-                    <Button Click="PaneOpen">
+                <StackPanel Spacing="8" Margin="5">
+                    <!-- Кнопка для открытия и закрытия панели -->
+                    <Button Click="PaneOpen" Background="Transparent" BorderThickness="0" >
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource LineHorizontalRegular3}"></PathIcon>
+                            <PathIcon Data="{StaticResource LineHorizontalRegular3}" Foreground="{StaticResource TextColor}"/>
                         </StackPanel>
                     </Button>
+
                     <!-- Кнопка для главной формы -->
-                    <Button Click="NavigateToMainForm">
+                    <Button Click="NavigateToMainForm" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource HomeIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Главная форма" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource HomeIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Главная" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
 
                     <!-- Кнопка для формы управления пациентами -->
-                    <Button Click="NavigateToPatientManagement">
+                    <Button Click="NavigateToPatientManagement" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource PatientIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Управление пациентами" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource PatientIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Пациенты" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
 
                     <!-- Кнопка для формы управления врачами -->
-                    <Button Click="NavigateToDoctorManagement">
+                    <Button Click="NavigateToDoctorManagement" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource DoctorIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Управление врачами" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource DoctorIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Врачи" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
 
                     <!-- Кнопка для формы расписания и управления графиком врачей -->
-                    <Button Click="NavigateToScheduleManagement">
+                    <Button Click="NavigateToScheduleManagement" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource ScheduleIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Расписание врачей" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource ScheduleIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Расписание" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
 
                     <!-- Кнопка для формы исключений в расписании -->
-                    <Button Click="NavigateToScheduleExceptions">
+                    <Button Click="NavigateToScheduleExceptions" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource ExceptionIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Исключения в расписании" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource ExceptionIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Исключения" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
 
                     <!-- Кнопка для формы статистики и отчетности -->
-                    <Button Click="NavigateToStatistics">
+                    <Button Click="NavigateToStatistics" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource StatsIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Статистика и отчёты" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource StatsIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Отчёты" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
 
                     <!-- Кнопка для формы поиска и фильтрации данных -->
-                    <Button Click="NavigateToSearch">
+                    <Button Click="NavigateToSearch" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
                         <StackPanel Orientation="Horizontal" Spacing="10">
-                            <PathIcon Data="{StaticResource SearchIcon}" Foreground="{StaticResource AccentColor}"/>
-                            <TextBlock Text="Поиск и фильтрация" Width="170" Foreground="{StaticResource TextColor}" />
+                            <PathIcon Data="{StaticResource SearchIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Поиск" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>
 
                 <!-- Кнопка "О программе" с логотипом в нижней части -->
-                <StackPanel Grid.Row="1" Background="{StaticResource AccentColor}" VerticalAlignment="Bottom">
-                    <Button Click="NavigateToAbout" Height="50" Width="250">
-                        <StackPanel Orientation="Horizontal" Spacing="15" VerticalAlignment="Center">
-                            <PathIcon Data="{StaticResource InfoIcon}" Foreground="White"/>
-                            <TextBlock Text="О программе" Width="130" Foreground="White"/>
-                            <!-- <Image Source="avares://LabTrack/Assets/Images/Logo.png" Width="45" Height="45"/> -->
+                <StackPanel Grid.Row="1" Background="{StaticResource PrimaryColor}" VerticalAlignment="Bottom" Margin="0,5,0,0">
+                    <Button Click="NavigateToAbout" Height="50" Width="250" Background="Transparent" BorderThickness="0">
+                        <StackPanel Orientation="Horizontal" Spacing="25" VerticalAlignment="Center">
+                            <PathIcon Data="{StaticResource InfoIcon}" Foreground="{StaticResource TextColor}" Margin="6,0,0,0"/>
+                            <TextBlock Text="О программе" Foreground="{StaticResource TextColor}" VerticalAlignment="Center" Margin="0,5,0,0"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>
@@ -94,8 +91,8 @@
         </SplitView.Pane>
         
         <!-- Контентная область -->
-        <SplitView.Content >
-            <TransitioningContentControl x:Name="ContentFrame" />
+        <SplitView.Content>
+            <TransitioningContentControl x:Name="ContentFrame"/>
         </SplitView.Content>
     </SplitView>
 </UserControl>

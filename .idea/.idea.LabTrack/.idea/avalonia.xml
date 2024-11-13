@@ -5,9 +5,20 @@
       <map>
         <entry key="LabTrack/App.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/MainWindow.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/AboutPage.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/DoctorManagement.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/DoctorManagementPage.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/MainForm.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/MainFormPage.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/PatientManagement.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/ScheduleExceptions.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/ScheduleManagement.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/SearchPage.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Pages/AdminPages/Statistics.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/Pages/Main/AdminMenuPage.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/Pages/Main/LoginPage.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/Pages/Main/MenuPage.axaml" value="LabTrack/LabTrack.csproj" />
+        <entry key="LabTrack/Resources/Icons.axaml" value="LabTrack/LabTrack.csproj" />
         <entry key="LabTrack/Styles/LabTheme.axaml" value="LabTrack/LabTrack.csproj" />
       </map>
     </option>

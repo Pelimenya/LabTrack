@@ -33,7 +33,7 @@
                                    FontSize="16" />
                         <TextBox x:Name="LoginBox"
                                  Width="250"
-                                 Height="40"
+                                 Height="45"
                                  Background="{StaticResource PrimaryColor}"
                                  BorderBrush="{StaticResource BorderColor}"
                                  BorderThickness="2"
@@ -53,7 +53,7 @@
                         <TextBox x:Name="PasswordBox"
                                  PasswordChar="*"
                                  Width="250"
-                                 Height="40"
+                                 Height="45"
                                  Background="{StaticResource PrimaryColor}"
                                  BorderBrush="{StaticResource BorderColor}"
                                  BorderThickness="2"

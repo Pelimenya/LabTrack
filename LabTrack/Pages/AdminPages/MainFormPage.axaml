@@ -2,7 +2,74 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:avalonia="clr-namespace:LiveChartsCore.SkiaSharpView.Avalonia;assembly=LiveChartsCore.SkiaSharpView.Avalonia"
+             xmlns:entites="clr-namespace:LabTrack.Entites"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="LabTrack.Pages.AdminPages.MainFormPage">
-    Welcome to Avalonia!
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Верхняя панель -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="{StaticResource PrimaryColor}">
+            <TextBlock Text="Главная форма" FontSize="20" Foreground="White"/>
+        </StackPanel>
+        
+        <!-- Основная информация -->
+        <ScrollViewer Grid.Row="1" Padding="10">
+            <StackPanel Spacing="10">
+                
+                <!-- Панель статистики -->
+                <Grid>
+                    <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Border Background="{StaticResource BackgroundSecondImageBrush}" CornerRadius="5" Padding="10" Margin="5" >
+                        <StackPanel>
+                            <TextBlock Text="Количество записей на сегодня" FontSize="14" Foreground="{StaticResource TextColor}"/>
+                            <!-- <TextBlock Text="{Binding TodaysAppointments.Count}" FontSize="24" Foreground="{StaticResource PrimaryColor}" FontWeight="Bold"/> -->
+
+                        </StackPanel>
+                    </Border>
+                </Grid>
+                
+                <!-- График активности врача -->
+                <Border Background="{StaticResource BackgroundSecondImageBrush}" CornerRadius="5" Padding="10" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="Активность врача" FontSize="16" Foreground="{StaticResource TextColor}"/>
+                        <avalonia:CartesianChart x:Name="ActivityChart" Background="Transparent"/>
+                    </StackPanel>
+                </Border>
+                
+                <!-- Последние записи -->
+                <Border Background="{StaticResource BackgroundSecondImageBrush}" CornerRadius="5" Padding="10" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="Последние записи" FontSize="16" Foreground="{StaticResource TextColor}"/>
+                        <ListBox >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate DataType="entites:MedicalRecord" x:Name="LastRecords">
+                                    <Border Background="White" CornerRadius="5" Margin="5" Padding="10">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding IdPatientNavigation.LastName}" FontWeight="Bold" Foreground="{StaticResource PrimaryColor}"/>
+                                            <TextBlock Text="{Binding Diagnosis}" Foreground="{StaticResource TextColor}" FontSize="14"/>
+                                            <TextBlock Text="{Binding Recommendations}" Foreground="{StaticResource TextColor}" FontSize="12"/>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!-- Нижняя панель -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Background="{StaticResource PrimaryColor}">
+            <TextBlock Text="LabTrack 2023" FontSize="14" Foreground="White" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
 </UserControl>
