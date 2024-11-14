@@ -11,7 +11,7 @@ namespace LabTrack;
 public partial class App : Application
 {
     public static IServiceProvider? ServiceProvider { get; set; }
-    public static int IdDoctor { get; set; }
+    public static int? IdDoctor { get; set; }
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);

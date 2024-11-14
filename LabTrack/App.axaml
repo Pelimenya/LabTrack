@@ -6,7 +6,6 @@
     <Application.Resources>
         
         <SolidColorBrush x:Key="PrimaryColor" Color="#B3E5FC" /> 
-        <SolidColorBrush x:Key="PrimaryColorOpacity" Color="#B3E5FC" Opacity="0.55" />
         <SolidColorBrush x:Key="AccentColor" Color="#0288D1" />   
         <SolidColorBrush x:Key="TextColor" Color="#1A237E" />     
         <SolidColorBrush x:Key="BackGroundTabBar" Color="#80daeb" Opacity="0.7" />     

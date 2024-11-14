@@ -11,6 +11,7 @@ public partial class AdminMenuPage : UserControl
     public AdminMenuPage()
     {
         InitializeComponent();
+        ContentFrame.Content = new MainFormPage();
     }
 
     private void NavigateToMainForm(object? sender, RoutedEventArgs e)
@@ -56,5 +57,13 @@ public partial class AdminMenuPage : UserControl
     private void PaneOpen(object? sender, RoutedEventArgs e)
     {
         SV.IsPaneOpen = !SV.IsPaneOpen;
+    }
+
+    private void NavigateToLogin(object? sender, RoutedEventArgs e)
+    {
+        App.IdDoctor = null;
+        MainWindow mainWindow = (MainWindow)this.VisualRoot;
+        LoginPage loginPage = new LoginPage();
+        mainWindow.ContentArea.Content = loginPage;
     }
 }

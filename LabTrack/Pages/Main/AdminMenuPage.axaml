@@ -76,6 +76,14 @@
                             <TextBlock Text="Поиск" Foreground="{StaticResource TextColor}" FontSize="14"/>
                         </StackPanel>
                     </Button>
+                    
+                    <!-- Кнопка для выхода из профиля-->
+                    <Button Click="NavigateToLogin" Background="Transparent" BorderThickness="0" Padding="5" HorizontalAlignment="Stretch">
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <PathIcon Data="{StaticResource ExitIcon}" Foreground="{StaticResource TextColor}" Width="24" Height="24"/>
+                            <TextBlock Text="Выйти" Foreground="{StaticResource TextColor}" FontSize="14"/>
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
 
                 <!-- Кнопка "О программе" с логотипом в нижней части -->

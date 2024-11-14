@@ -21,11 +21,6 @@
 
         <!-- Основная информация -->
         <ScrollViewer Grid.Row="1" Padding="10">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
                 <StackPanel Spacing="10">
                     <!-- Панель статистики -->
                     <Grid>
@@ -83,7 +78,6 @@
                         </StackPanel>
                     </Border>
                 </StackPanel>
-            </Grid>
         </ScrollViewer>
     </Grid>
 </UserControl>

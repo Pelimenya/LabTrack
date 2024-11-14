@@ -63,7 +63,7 @@
                                  CornerRadius="8" />
                         <TextBox x:Name="TextBoxPassword"
                                  Width="250"
-                                 Height="40"
+                                 Height="45"
                                  Background="{StaticResource PrimaryColor}"
                                  BorderBrush="{StaticResource BorderColor}"
                                  BorderThickness="2"
